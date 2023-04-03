@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import kindaSwiftUI
 
 @main
 struct kindaSwiftUIDemo_ToastApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            KindaSwiftUIContentView {
+                ContentView()
+            }
         }
     }
 }

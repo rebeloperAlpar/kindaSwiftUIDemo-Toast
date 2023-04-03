@@ -6,16 +6,21 @@
 //
 
 import SwiftUI
+import kindaSwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Screen { context in
+            VStack {
+                Button("Show Toast") {
+                    context.toastManager.present(.success, .hud, message: "This is a toast!")
+                }
+                Button("Alert") {
+                    context.alertManager.present(.success, .alert, message: "This is an alert!")
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

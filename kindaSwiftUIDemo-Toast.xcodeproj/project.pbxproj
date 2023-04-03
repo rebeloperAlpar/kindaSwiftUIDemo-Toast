@@ -11,6 +11,8 @@
 		C9C1496529DAD421002EC2D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C1496429DAD421002EC2D2 /* ContentView.swift */; };
 		C9C1496729DAD422002EC2D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C1496629DAD422002EC2D2 /* Assets.xcassets */; };
 		C9C1496A29DAD422002EC2D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C1496929DAD422002EC2D2 /* Preview Assets.xcassets */; };
+		C9C1497129DAD472002EC2D2 /* KindaSwiftUI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9C1497029DAD472002EC2D2 /* KindaSwiftUI-Info.plist */; };
+		C9C1497429DAD493002EC2D2 /* kindaSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C9C1497329DAD493002EC2D2 /* kindaSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		C9C1496429DAD421002EC2D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9C1496629DAD422002EC2D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9C1496929DAD422002EC2D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9C1497029DAD472002EC2D2 /* KindaSwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KindaSwiftUI-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C1497429DAD493002EC2D2 /* kindaSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				C9C1496229DAD421002EC2D2 /* kindaSwiftUIDemo_ToastApp.swift */,
 				C9C1496429DAD421002EC2D2 /* ContentView.swift */,
+				C9C1497029DAD472002EC2D2 /* KindaSwiftUI-Info.plist */,
 				C9C1496629DAD422002EC2D2 /* Assets.xcassets */,
 				C9C1496829DAD422002EC2D2 /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "kindaSwiftUIDemo-Toast";
+			packageProductDependencies = (
+				C9C1497329DAD493002EC2D2 /* kindaSwiftUI */,
+			);
 			productName = "kindaSwiftUIDemo-Toast";
 			productReference = C9C1495F29DAD421002EC2D2 /* kindaSwiftUIDemo-Toast.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = C9C1495629DAD421002EC2D2;
+			packageReferences = (
+				C9C1497229DAD493002EC2D2 /* XCRemoteSwiftPackageReference "kindaSwiftUI" */,
+			);
 			productRefGroup = C9C1496029DAD421002EC2D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9C1496A29DAD422002EC2D2 /* Preview Assets.xcassets in Resources */,
+				C9C1497129DAD472002EC2D2 /* KindaSwiftUI-Info.plist in Resources */,
 				C9C1496729DAD422002EC2D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9C1497229DAD493002EC2D2 /* XCRemoteSwiftPackageReference "kindaSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloperAlpar/kindaSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9C1497329DAD493002EC2D2 /* kindaSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9C1497229DAD493002EC2D2 /* XCRemoteSwiftPackageReference "kindaSwiftUI" */;
+			productName = kindaSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9C1495729DAD421002EC2D2 /* Project object */;
 }
